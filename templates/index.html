@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <df class="container">
+        <h1><center>Algerian Forest Fire Prediction</center></h1>
+    <div class="container text-center" style="margin-top: 5%;">
+        <form action="/submit" method="post">
+        <div class="row">
+          <div class="col">
+            
+                <div class="mb-3">
+                  <label for="temp" class="form-label">Temperature</label>
+                  <input type="text" name="Temperature" class="form-control"> 
+                </div>
+                <div class="mb-3">
+                    <label for="temp" class="form-label">RH</label>
+                    <input type="text" name="RH" class="form-control"> 
+                  </div>
+                <div class="mb-3">
+                    <label for="temp" class="form-label">Ws</label>
+                    <input type="text" name="Ws" class="form-control"> 
+                  </div>
+                  <div class="mb-3">
+                    <label for="temp" class="form-label">Classes</label>
+                    <input type="text" name="Classes" class="form-control"> 
+                  </div>
+                
+                
+              
+          </div>
+          <div class="col">
+            <div class="mb-3">
+                <label for="temp" class="form-label">Rain</label>
+                <input type="text" name="Rain" class="form-control"> 
+              </div>
+              
+              <div class="mb-3">
+                <label for="temp" class="form-label">FFMC</label>
+                <input type="text" name="FFMC" class="form-control"> 
+              </div>
+
+              <div class="mb-3">
+                <label for="temp" class="form-label">DMC</label>
+                <input type="text" name="DMC" class="form-control"> 
+              </div>
+              <button type="submit" style="margin-top: 10%;padding-left: 40%;padding-right: 40%;" class="btn btn-primary">Submit</button>
+              <h1>The predicted FWI value is {{result}}</h1>
+              
+          </div>
+          <div class="col">
+            <div class="mb-3">
+                <label for="temp" class="form-label">DC</label>
+                <input type="text" name="DC" class="form-control"> 
+              </div>
+            <div class="mb-3">
+                <label for="temp" class="form-label">ISI</label>
+                <input type="text" name="ISI" class="form-control"> 
+              </div>
+              <!-- <div class="mb-3">
+                <label for="temp" class="form-label">BUI</label>
+                <input type="text" name="BUI" class="form-control"> 
+              </div> -->
+
+              <div class="mb-3">
+                <label for="temp" class="form-label">Region</label>
+                <input type="text" name="region" class="form-control"> 
+              </div>
+              
+          </div>
+        </div>
+       </form>
+      </div>
+      </df>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
