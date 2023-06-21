@@ -21,10 +21,7 @@ To run this application, you need to have the following installed on your system
 3. Install the required dependencies by running the following command:
 
    ```bash
-   pip install Flask
-   pip install pandas
-   pip install scikit-learn
-   pip install numpy
+   pip install -r requirements.txt
    ```
 
 ## Usage
